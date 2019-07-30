@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% load staticfiles %}
+
+  <header class="masthead" style="background-image: url('intro.png')">
+  <center>
+    <img class="image1" src="{% static 'intro.png'%}" style="width: 100%; height: auto;" alt="사진">
+  </center>
+  </header>
+  <center>
+    <section class="h-main">
+    <a href="line_up">
+    <img class="h-main-img" src="{% static 'lineup.png'%}" style="width: 100%; height: auto;" alt="사진">
+    </a>
+    </section>
+    <section class="h-main">
+    <a href="lost_main">
+    <img class="h-main-img" src="{% static 'lost.png'%}" style="width: 100%; height: auto;" alt="사진">
+    </a>
+    </section>
+    <section class="h-main">
+    <a href="flea_main">
+    <img class="h-main-img" src="{% static 'fleemarket.png'%}" style="width: 100%; height: auto;" alt="사진">
+    </a>
+    </section>
+    <section class="h-main">
+    <a href="publicity_main">
+    <img class="h-main-img" src="{% static 'free.png'%}" style="width: 100%; height: auto;" alt="사진">
+    </a>
+    </section>
+    <section class="bg-dark">
+    <img class="h-main-img" src="{% static 'tips.png'%}" style="width: 100%; height: auto;" alt="사진">
+
+    <div class= "container" style "background-color: #0D4C7B;">
+      <a class="btn btn-outline-secondary" href="toilet">화장실</a>
+      <a class="btn btn-outline-secondary" href="drink">축제 지도</a>
+      <a class="btn btn-outline-secondary" href="store">편의점위치</a>
+      <a class="btn btn-outline-secondary" href="map">오는길</a>
+    </div>
+    </section>
+  </center>
+
+{% endblock%}

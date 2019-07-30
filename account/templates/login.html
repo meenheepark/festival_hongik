@@ -1,0 +1,43 @@
+{%extends 'base.html'%}
+
+{%block content%}
+
+<div class="row">
+    <div class="col-12 col-md-3 col-lg-4"></div>
+        <div class="col-12 col-md-6 col-lg-4">
+            <br>
+            <br>
+            <div class="container"  >
+                <div class="card opacity" style="margin-top:30px;">
+                    <div class="containe text-center" style="margin-top:30px;">
+                        <h1> Hongik_festival</h1> 
+                    </div>
+                    <div class="card-body text-center">
+                        <div class="top">
+   <!--                         <div class="center-btn">
+                                <img class="loger1 img-fluid" src="#" alt="#">
+                            </div>-->
+                        </div>
+                        <br>
+                    <form action = "{% url 'login' %}" method = "POST"> 
+                        {% csrf_token %}
+                        아이디
+                        <br> 
+                        <input name = "username" type = "text" placeholder="아이디를 입력하세요"> 
+                        <br> <br> 
+                        비밀번호
+                        <br> 
+                        <input name = "password" type = "password" placeholder="비밀번호를 입력하세요"> 
+                        <br>
+                        <br> 
+                        <input class="btn btn-outline-dark" type="submit" value="Login"> 
+                    </form>
+                    <br>
+                    <p class="sign_up_p">아직 가입하지 않으셨다면? <a class="sign_up_link" href="{% url 'signup' %}">가입하기</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

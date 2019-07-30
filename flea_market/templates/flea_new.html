@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+  <div class="container">
+    <br><br>
+    <font size ="6" color = "black"><strong>새 글쓰기</strong></font>
+    <form method = "POST" enctype ="multipart/form-data">
+        {% csrf_token %}
+        <table class="mx-auto table table-striped" style="width: 200px;">
+            {{ form.as_table }}
+        </table>
+        <br>
+        <input type="submit" value="제출하기">
+    </form>
+  </div>
+</div>
+
+{%endblock%}

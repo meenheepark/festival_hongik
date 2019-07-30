@@ -1,0 +1,81 @@
+{%extends 'base.html'%}
+
+{%block content%}
+
+{%load staticfiles%}
+
+<header class="masthead" style="background-image: url('img/home-bg.jpg')">
+    <div class="overlay"></div>
+    <br>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="site-heading text-center">
+        <font size ="5" color = "black"><strong>개발자 소개</strong></font>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+<body>
+<center>
+<br>
+<div class="col-xs-6 col-lg-4 mx-auto text-center">
+    <div class="card h-card">
+        <div class="h-img-wrapper">
+            <img class="card-img-top h-img" src="{% static 'PSB.png'%}"  alt="Card image cap">
+        </div>
+        <div class="card-body">
+            <h5 class="card-title"> 박상범 </h5>
+        </div>
+    </div>
+</div>
+<br>
+<div class="col-xs-6 col-lg-4 mx-auto text-center">
+    <div class="card h-card">
+        <div class="h-img-wrapper">
+            <img class="card-img-top h-img" src="{% static 'CYS.png'%}"  alt="Card image cap">
+        </div>
+        <div class="card-body">
+            <h5 class="card-title"> 최연식 </h5>
+        </div>
+    </div>
+</div>
+<br>
+<div class="col-xs-6 col-lg-4 mx-auto text-center">
+    <div class="card h-card">
+        <div class="h-img-wrapper">
+            <img class="card-img-top h-img" src="{% static 'MJH.png'%}"  alt="Card image cap">
+        </div>
+        <div class="card-body">
+            <h5 class="card-title"> 문정혁 </h5>
+        </div>
+    </div>
+</div>
+<br>
+<div class="col-xs-6 col-lg-4 mx-auto text-center">
+    <div class="card h-card">
+        <div class="h-img-wrapper">
+            <img class="card-img-top h-img" src="{% static 'PMH.png'%}"  alt="Card image cap">
+        </div>
+        <div class="card-body">
+            <h5 class="card-title"> 박민희 </h5>
+        </div>
+    </div>
+</div>
+<br>
+<div class="col-xs-6 col-lg-4 mx-auto text-center">
+    <div class="card h-card">
+        <div class="h-img-wrapper">
+            <img class="card-img-top h-img" src="{% static 'JYW.png'%}"  alt="Card image cap">
+        </div>
+        <div class="card-body">
+            <h5 class="card-title"> 조연우 </h5>
+        </div>
+    </div>
+</div>
+</center>
+
+</body>
+{%endblock%}

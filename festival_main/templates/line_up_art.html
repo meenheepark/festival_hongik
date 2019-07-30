@@ -1,0 +1,29 @@
+{%extends 'base.html'%}
+
+{%block content%}
+
+{%load staticfiles%}
+
+    <div class="overlay"></div>
+    <center>
+      <img class="image1" src="{% static 'lineup.png'%}" style="width: 100%; height: auto;" alt="사진">
+    </center>
+
+    <div class="container">
+    <center>
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="site-heading">
+            <h1>
+        <font size ="6" color = "black"><strong>미대무대 라인업</strong></font>
+            </h1>
+            <img class="image1" src="{% static 'lineup_art.jpg'%}" style="width: 100%; height: auto;" alt="사진">
+          </div>
+        </div>
+      </div>
+    </center>
+    </div>
+  </header>
+
+
+{%endblock%}

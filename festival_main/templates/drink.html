@@ -1,0 +1,37 @@
+{%extends 'base.html'%}
+
+{%block content%}
+
+{%load staticfiles%}
+<header class="masthead" style="background-image: url('img/home-bg.jpg')">
+    <center>
+      <img class="image1" src="{% static 'tips.png'%}" style="width: 100%; height: auto;" alt="사진">
+    </center>
+</header>
+<br>
+    <div class="container">
+      <center>
+        <font size ="6" color = "black"><strong>주점 지도</strong></font><br>
+        <img class="image1" src="{% static 'drink.jpg'%}" width="500" alt="사진">
+        <br>✌ 모든 주점을 한눈에!
+      </center>
+    </div>
+<br>
+    <div class="container">
+      <center>
+        <font size ="6" color = "black"><strong>프로모션 지도</strong></font><br>
+        <img class="image1" src="{% static 'promotion.jpg'%}" width="500" alt="사진"><br>
+        ✌ 다양한 프로모션을 즐겨보아요~
+      </center>
+    </div>
+<br>
+
+<div class="container">
+  <center>
+    <font size ="6" color = "black"><strong>홍대축제 5계명</strong></font><br>
+    <img class="image1" src="{% static 'notice.jpg'%}" width="500" alt="사진"><br>
+✌ 홍대 축제를 즐기기 위해서라면 지켜주세요~~
+  </center>
+</div>
+
+{%endblock%}
